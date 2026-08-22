@@ -22,6 +22,6 @@ git -C /tmp/tbha pull 2>/dev/null || git clone git@github.com:JoeConyers/tizenbr
 cp package.json main.js README.md /tmp/tbha/ && git -C /tmp/tbha add -A && git -C /tmp/tbha commit -m "update" && git -C /tmp/tbha push
 ```
 
-jsDelivr caches `gh/` content; after a push, purge with
-`curl https://purge.jsdelivr.net/gh/JoeConyers/tizenbrew-homeassistant/package.json`
+**Add the module on the TV as `JoeConyers/tizenbrew-homeassistant@main`** — the unversioned `gh/` path resolves to a commit that jsDelivr caches and does not purge; the `@main` path does. After a push, purge with
+`curl https://purge.jsdelivr.net/gh/JoeConyers/tizenbrew-homeassistant@main/package.json`
 (and `/main.js`), then re-launch the module on the TV.

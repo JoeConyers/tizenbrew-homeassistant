@@ -1,10 +1,10 @@
 {
   "name": "tizenbrew-homeassistant",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "appName": "Home Assistant",
   "description": "Home Assistant dashboard as a TizenBrew module (Samsung S95H living room).",
   "packageType": "mods",
-  "websiteURL": "https://ha.home.joeconyers.com/lovelace/0",
+  "websiteURL": "https://ha.home.joeconyers.com/lovelace/living-room",
   "main": "main.js",
   "evaluateScriptOnDocumentStart": false,
   "keys": [

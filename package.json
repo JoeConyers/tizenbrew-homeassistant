@@ -1,0 +1,19 @@
+{
+  "name": "tizenbrew-homeassistant",
+  "version": "0.1.0",
+  "appName": "Home Assistant",
+  "description": "Home Assistant dashboard as a TizenBrew module (Samsung S95H living room).",
+  "packageType": "mods",
+  "websiteURL": "http://192.168.1.203:8123/lovelace/0",
+  "main": "main.js",
+  "evaluateScriptOnDocumentStart": false,
+  "keys": [
+    "ColorF0Red",
+    "ColorF1Green",
+    "ColorF2Yellow",
+    "ColorF3Blue",
+    "MediaPlayPause"
+  ],
+  "repository": { "url": "https://github.com/JoeConyers/tizenbrew-homeassistant" },
+  "license": "MIT"
+}

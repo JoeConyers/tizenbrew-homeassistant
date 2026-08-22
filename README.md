@@ -9,7 +9,7 @@ serves **public** GitHub repos (`gh/<user>/<repo>`) or npm packages. `infastruct
 private, so the files here are pushed to the public repo
 `JoeConyers/tizenbrew-homeassistant` (root-level `package.json` + `main.js`).
 
-No secrets live here. Login is handled by HA's `trusted_networks` auth provider
+No secrets live here. Login is a one-time on-TV sign-in as a non-admin `tv` user (the refresh token persists in the WebView)
 (see `../../docs/tizenbrew-homeassistant.md`).
 
 ## Publish / update

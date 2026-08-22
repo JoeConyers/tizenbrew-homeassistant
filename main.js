@@ -1,6 +1,6 @@
 // Injected into the Home Assistant frontend by TizenBrew (packageType: mods).
-// No secrets here: login is handled server-side by HA's trusted_networks
-// auth provider for the TV's IP. This script only adapts the UI to a remote.
+// No secrets here: login is a one-time on-TV sign-in as the non-admin `tv` user;
+// HA keeps its refresh token in this WebView. This script only adapts the UI to a remote.
 
 (function () {
   'use strict';
@@ -22,7 +22,7 @@
   } catch (e) { console.warn('[tizenbrew-ha] key registration failed', e); }
 
   // 2. Call HA services using the session the frontend already holds.
-  //    hassConnection is exposed by the HA frontend; trusted_networks logged us in.
+  //    hassConnection is exposed by the HA frontend; the stored refresh token logged us in.
   function callService(entry) {
     var conn = window.hassConnection;
     if (!conn) return;

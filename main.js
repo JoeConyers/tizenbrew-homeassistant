@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  var HA_BASE = 'http://192.168.1.203:8123';
+  var HA_BASE = 'https://ha.home.joeconyers.com'; // HA is bound to 127.0.0.1:18123 on 2070-pc; only reachable via Caddy
   // Colour-key shortcuts → HA services. Edit freely; nothing here is secret.
   var KEYMAP = {
     ColorF0Red:    { domain: 'scene',  service: 'turn_on', data: { entity_id: 'scene.home_nightlight' } },        // "movie" until a dedicated scene exists
